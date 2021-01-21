@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script src="main.js"></script>
+
+    <div class="container">
+
+        <img id="headerpic" src="https://static.thenounproject.com/png/3096913-200.png">
+
+        <h1><a href="#"></a>Welcome to Rock, Paper, Scissors!</h1>
+        <h2>Rock, Paper, or Scissors?</h2>
+        <p><em>Choose one to proceed with the game.</em></p>
+
+        <div id="playerSelect">
+            <button id="rock" type="button" onclick="selectButton(this)">
+                <img src="https://static.thenounproject.com/png/88661-200.png">
+            </button>
+
+            <button id="paper" type="button" onclick="selectButton(this)">
+                <img src="https://static.thenounproject.com/png/88662-200.png">
+            </button>
+
+            <button id="scissors" type="button" onclick="selectButton(this)">
+                <img src="https://static.thenounproject.com/png/88664-200.png">
+            </button>
+        </div>
+
+        <h2 id="playGame"></h2>
+
+        <div class="scoreboard-box">
+            <p id="scoreboard"><a href="#"></a><b>SCOREBOARD</b></p>
+            <img id="yplayer" src="https://static.thenounproject.com/png/3271328-200.png">
+            <img id="cplayer" src="https://static.thenounproject.com/png/2816616-200.png">
+            <p id="you"><b>YOU</b></p>
+            <p id="computer"><b>COMPUTER</b></p>
+            <p id="playerPoint"><script>totalScore();</script></p>
+            <p id="space">:</p>
+            <p id="compPoint"><script>totalScore();</script></p>
+        </div>
+
+        <button id="restart" onclick="selectButton(this)"><b>Restart Round</b></button>
+    </div>
+</body>
+</html>
